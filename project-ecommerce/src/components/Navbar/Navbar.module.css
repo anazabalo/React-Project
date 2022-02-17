@@ -1,0 +1,29 @@
+.Navbar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  padding: 10px 30px;
+}
+
+a {
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  background-color: transparent;
+}
+.rightMenu {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  font-size: 0.85rem;
+}
+
+.Navlinks {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  text-transform: none;
+}

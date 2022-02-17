@@ -1,6 +1,7 @@
-import React from "react";
-import { Header } from "./components/Header";
-import { ProductList } from "./components/Products/index";
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home'
+import './App.css';
+
 import 'boxicons';
 
 
@@ -9,10 +10,12 @@ import 'boxicons';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <ProductList/>
-    
-    </div>
+      <Navbar />
+      <div className="content">
+        <Home />
+      </div>
+    </div>   
+
   );
 }
 
