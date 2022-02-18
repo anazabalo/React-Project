@@ -1,4 +1,4 @@
-.Navbar {
+.navBar {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -20,8 +20,7 @@ a {
   font-size: 0.85rem;
 }
 
-.Navlinks {
-  display: block;
+.navlinks {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.4rem;
