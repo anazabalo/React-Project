@@ -1,15 +1,16 @@
-import styles from './Home.module.css'
-import landingImage from './Homepage.jpg'
+import styles from './Home.module.css';
+import landingImage from './Homepage.jpg';
+
 
 const Home = () => {
 
-  /*const handleClick = () => {
+  const handleClick = () => {
     alert('clicking');
     return false;
-  }*/
+  }; 
 
   return ( 
-    <div className={styles.homeContent} >
+    <div className={styles.homeContent} onClick = {handleClick} >
         
       <div className={styles.mainImage}>
         <a href='/' title='' className={styles.imageLink} >

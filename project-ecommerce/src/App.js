@@ -1,9 +1,10 @@
 import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import ProductList from './components/Products/ProductsList';
+import Cart from './components/Cart/Cart';
 import './App.css';
 
 import 'boxicons';
-
 
 //Create routes Here
 
@@ -14,8 +15,13 @@ function App() {
       <div className="content">
         <Home />
       </div>
-    </div>   
-
+      <div>
+        <ProductList />
+      </div>
+      <div>
+        <Cart />
+      </div>
+    </div>
   );
 }
 
