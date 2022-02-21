@@ -5,7 +5,7 @@ const Products = ({ products, title }) => {
 
   return (
     <div className="allProducts">
-      <h3>{title}</h3>
+      <p>{title}</p>
 
       {products.map((product) => (
         <>
@@ -14,7 +14,7 @@ const Products = ({ products, title }) => {
               <img src={product.image} alt={product.title} />
             </a>
 
-            <h4> {product.title}</h4>
+            <p> {product.title}</p>
 
             <p> {product.category}</p>
             <p> {product.price}</p>
