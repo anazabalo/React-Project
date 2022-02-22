@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import landingImage from './Homepage.jpg';
+import landingImage from '../../Images/Homepage.jpg';
 
 const Home = () => {
   const handleClick = () => {
