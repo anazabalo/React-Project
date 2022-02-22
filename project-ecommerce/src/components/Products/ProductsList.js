@@ -6,7 +6,7 @@ const ProductList = () => {
   //products.filter((itemUnit) => itemUnit.quantity === 1);};
   return (
     <div>
-      <Products title="All Products" />
+      <Products title="AllProducts" />
     </div>
   );
 };

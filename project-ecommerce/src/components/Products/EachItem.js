@@ -1,6 +1,9 @@
+import { useState } from 'react';
 const EachItem = (product) => {
-  const handleClick = () => {
-    console.log('adding to cart');
+  const [cart, setCart] = useState([]);
+  const addToCart = (product) => {
+    console.log('cart');
+    setCart([...cart, product]);
   };
   return (
     <div className="productPreview" key={product.id}>
@@ -12,7 +15,7 @@ const EachItem = (product) => {
 
       <p> {product.category}</p>
       <p> {product.price}</p>
-      <button onClick={() => handleClick()}>Add to Cart</button>
+      <button onClick={() => addToCart(product)}>Add to Cart</button>
     </div>
   );
 };

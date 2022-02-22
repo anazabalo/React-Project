@@ -1,24 +1,25 @@
 import styles from './Home.module.css';
 import landingImage from '../../Images/Homepage.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const handleClick = () => {
+  /*const handleClick = () => {
     alert('clicking');
     return false;
-  };
+  };*/
 
   return (
-    <div className={styles.homeContent} onClick={handleClick}>
+    <div className={styles.homeContent}>
       <div className={styles.mainImage}>
-        <a href="/" title="" className={styles.imageLink}>
-          <img src={landingImage} alt="" />
-        </a>
+        <Link to="/products" title="Link to Products" className={styles.imageLink}>
+          <img src={landingImage} alt="Welcome picture redirecting to products" />
+        </Link>
       </div>
 
       <div className={styles.mainText}>
         <div>
           <p>
-            <a href="/">Your future home is here</a>
+            <Link to="/products">Your future home is here </Link>
           </p>
         </div>
 
@@ -29,7 +30,7 @@ const Home = () => {
         </div>
 
         <div>
-          <a href="/"> SHOP THE NEW COLLECTION</a>
+          <Link to="/products"> SHOP THE NEW COLLECTION</Link>
         </div>
       </div>
     </div>

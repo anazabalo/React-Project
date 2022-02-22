@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 const Navbar = () => {
   //Insert LOGO in H1
@@ -5,29 +6,31 @@ const Navbar = () => {
     <nav className={styles.navBar}>
       <p>React Project</p>
       <div>
-        <a href="/" className={styles.navlinks}>
+        <Link to="/" className={styles.navlinks}>
           {' '}
           Home
-        </a>
-        <a href="/" className={styles.navlinks}>
+        </Link>
+        <Link to="/products" className={styles.navlinks}>
           {' '}
           Products
-        </a>
+        </Link>
       </div>
 
       <div className={styles.rightMenu}>
         <div>
-          <a href="/" className={styles.signUplink}>
+          <Link to="/newcustomer" className={styles.signUplink}>
             New Customer
-          </a>
-          <a href="/" className={styles.loginLink}>
+          </Link>
+          <Link to="/login" className={styles.loginLink}>
             LogIn
-          </a>
+          </Link>
         </div>
 
         <div>
-          <box-icon name="cart"></box-icon>
-          <span className={styles.itemTotal}>0</span>
+          <Link to="/cart">
+            <box-icon name="cart"></box-icon>
+            <span className={styles.itemTotal}>0</span>
+          </Link>
         </div>
       </div>
     </nav>

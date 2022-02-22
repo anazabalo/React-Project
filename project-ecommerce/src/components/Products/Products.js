@@ -1,5 +1,6 @@
 import EachItem from './EachItem';
 import Data from '../../Data';
+import { useState } from 'react';
 const Products = ({ title }) => {
   return (
     <div className="allProducts">
