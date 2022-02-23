@@ -1,12 +1,12 @@
 import Products from './Products';
 import styles from './Products.css';
 
-const ProductList = () => {
+const ProductList = ({ adding }) => {
   //const handleClick = () => {
   //products.filter((itemUnit) => itemUnit.quantity === 1);};
   return (
     <div>
-      <Products title="AllProducts" />
+      <Products adding={adding} title="AllProducts" />
     </div>
   );
 };

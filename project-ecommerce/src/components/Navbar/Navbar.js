@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-const Navbar = () => {
+const Navbar = ({ adding }) => {
   //Insert LOGO in H1
   return (
     <nav className={styles.navBar}>

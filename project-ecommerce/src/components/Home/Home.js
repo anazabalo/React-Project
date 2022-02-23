@@ -3,11 +3,6 @@ import landingImage from '../../Images/Homepage.jpg';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  /*const handleClick = () => {
-    alert('clicking');
-    return false;
-  };*/
-
   return (
     <div className={styles.homeContent}>
       <div className={styles.mainImage}>

@@ -1,25 +1,30 @@
-import { useState } from 'react';
-
-const Cart = () => {
-  const [count, setCount] = useState(0);
+const Cart = ({ cartItems, adding, onRemove }) => {
+  console.log(cartItems);
   return (
     <>
       <div className="cartContainer">
         <p>My Cart</p>
-        <img src="/" alt="" />
-        <p>description</p>
-      </div>
-      <div>
-        <p>Price</p>
-        <p>{count}</p>
         <div>
-          <button onClick={() => setCount(count - 1)}>-</button>
-          <button onClick={() => setCount(count + 1)}>+</button>
-        </div>
+          {cartItems.lenght === 0 && <div>Cart is empty</div>}
+          {cartItems.map((item) => (
+            <div key={item.id} className="row">
+              <div>{item.name}</div>
 
-        <button>delete</button>
-        <p>total</p>
-        <button>Checkout</button>
+              <div>
+                <button onClick={() => onRemove(item)} className="remove">
+                  -
+                </button>
+                <button onClick={() => adding(item)} className="add">
+                  +
+                </button>
+              </div>
+
+              <div>
+                {item.quantity} x ${item.price.toFixed(2)}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

@@ -1,10 +1,4 @@
-import { useState } from 'react';
-const EachItem = (product) => {
-  const [cart, setCart] = useState([]);
-  const addToCart = (product) => {
-    console.log('cart');
-    setCart([...cart, product]);
-  };
+const EachItem = (product, { adding }) => {
   return (
     <div className="productPreview" key={product.id}>
       <a href="/">
@@ -15,7 +9,7 @@ const EachItem = (product) => {
 
       <p> {product.category}</p>
       <p> {product.price}</p>
-      <button onClick={() => addToCart(product)}>Add to Cart</button>
+      <button onClick={adding}>Add to Cart</button>
     </div>
   );
 };
