@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-const Navbar = ({ adding }) => {
+const Navbar = ({ cartItems }) => {
   //Insert LOGO in H1
   return (
     <nav className={styles.navBar}>
@@ -29,7 +29,7 @@ const Navbar = ({ adding }) => {
         <div>
           <Link to="/cart">
             <box-icon name="cart"></box-icon>
-            <span className={styles.itemTotal}>0</span>
+            <span className={styles.itemTotal}>{cartItems.length}</span>
           </Link>
         </div>
       </div>

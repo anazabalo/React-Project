@@ -1,10 +1,14 @@
-import EachItem from './EachItem';
+import ProductCard from './ProductCard';
 import Data from '../../Data';
-const Products = ({ title, adding }) => {
+const Products = ({ onAddToCart }) => {
   return (
     <div className="allProducts">
-      <p>{title}</p>
-      <div adding={adding}>{Data.map(EachItem)}</div>
+      <h1>Products</h1>
+      <div>
+        {Data.map((product) => (
+          <ProductCard key={product.id} product={product} onAddToCart={onAddToCart} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const EachItem = (product, { adding }) => {
+const ProductCard = ({ product, onAddToCart }) => {
   return (
     <div className="productPreview" key={product.id}>
       <a href="/">
@@ -9,9 +9,9 @@ const EachItem = (product, { adding }) => {
 
       <p> {product.category}</p>
       <p> {product.price}</p>
-      <button onClick={adding}>Add to Cart</button>
+      <button onClick={() => onAddToCart(product.title)}>Add to Cart</button>
     </div>
   );
 };
 
-export default EachItem;
+export default ProductCard;
