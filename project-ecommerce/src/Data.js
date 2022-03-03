@@ -5,7 +5,7 @@ const Data = [
     price: 795,
     image: require('./Images/image2.jpg'),
     category: 'Chair',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const Data = [
     price: 499,
     image: require('./Images/image3.jpg'),
     category: 'Bar Chair',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const Data = [
     price: 129,
     image: require('./Images/image4.jpg'),
     category: 'Stool Chair',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const Data = [
     price: 5990,
     image: require('./Images/image5.jpg'),
     category: 'Lounge Chair',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const Data = [
     price: 699,
     image: require('./Images/image6.jpg'),
     category: 'Side Table',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const Data = [
     price: 4495,
     image: require('./Images/image7.jpg'),
     category: 'Sofa',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const Data = [
     price: 16955,
     image: require('./Images/image8.jpg'),
     category: 'nike',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const Data = [
     price: 545,
     image: require('./Images/image9.jpg'),
     category: 'Chair',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const Data = [
     price: 1095,
     image: require('./Images/image10.jpg'),
     category: 'Side Table',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const Data = [
     price: 2495,
     image: require('./Images/image11.jpg'),
     category: 'Lounge Chair',
-    quantity: 100,
+    quantity: 1,
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ const Data = [
     price: 1995,
     image: require('./Images/image12.jpg'),
     category: 'Lounge Chair',
-    quantity: 100,
+    quantity: 1,
   },
 ];
 

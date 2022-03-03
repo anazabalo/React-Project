@@ -28,7 +28,6 @@ const Navbar = ({ cartItems }) => {
 
         <div>
           <Link to="/cart">
-            <box-icon name="cart"></box-icon>
             <span className={styles.itemTotal}>{cartItems.length}</span>
           </Link>
         </div>

@@ -1,15 +1,17 @@
+import './Products.css';
 const ProductCard = ({ product, onAddToCart }) => {
+  const { image, title, price, category } = product;
   return (
     <div className="productPreview" key={product.id}>
       <a href="/">
-        <img src={product.image} alt={product.title} />
+        <img src={image} alt={title} />
       </a>
 
-      <p> {product.title}</p>
+      <p> {title}</p>
 
-      <p> {product.category}</p>
-      <p> {product.price}</p>
-      <button onClick={() => onAddToCart(product.title)}>Add to Cart</button>
+      <p> {category}</p>
+      <p> {price}</p>
+      <button onClick={() => onAddToCart(product)}>Add to Cart</button>
     </div>
   );
 };
