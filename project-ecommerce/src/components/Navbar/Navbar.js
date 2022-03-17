@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
+import { CartItemsContext } from '../../Context/CartItemsProvider';
+import { useContext } from 'react';
 import styles from './Navbar.module.css';
-const Navbar = ({ cartItems }) => {
-  //Insert LOGO in H1
+
+const Navbar = () => {
+  const value = useContext(CartItemsContext);
+  const [cartItems] = value.cartItems;
+
   return (
     <nav className={styles.navBar}>
       <p>React Project</p>
@@ -22,7 +27,7 @@ const Navbar = ({ cartItems }) => {
             New Customer
           </Link>
           <Link to="/login" className={styles.loginLink}>
-            LogIn
+            Log in
           </Link>
         </div>
 

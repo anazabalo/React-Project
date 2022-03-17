@@ -1,0 +1,101 @@
+{
+  "products": [
+{
+  "id": 1,
+  "title": "Odger",
+  "price": 795,
+  "image": "/Images/image2.jpg",
+  "category": "Chair",
+  "quantity": 1
+},
+
+{
+  "id": 2,
+  "title": "Nilsolle",
+  "price": 499,
+  "image": "/Images/image3.jpg",
+  "category": "Bar Chair",
+  "quantity": 1
+},
+{
+  "id": 3,
+  "title": "Kyrre",
+  "price": 129,
+  "image": "/Images/image4.jpg",
+  "category": "Stool Chair",
+  "quantity": 1
+},
+
+{
+  "id": 4,
+  "title": "Strandmon",
+  "price": 5990,
+  "image": "/Images/image5.jpg",
+  "category": "Lounge Chair",
+  "quantity": 1
+},
+
+{
+  "id": 5,
+  "title": "Hokksund",
+  "price": 699,
+  "image": "/Images/image6.jpg",
+  "category": "Side Table",
+  "quantity": 1
+},
+
+{
+  "id": 6,
+  "title": "Klubbfors",
+  "price": 4495,
+  "image": "/Images/image7.jpg",
+  "category": "Sofa",
+  "quantity": 1
+},
+
+{
+  "id": 7,
+  "title": "Stockholm",
+  "price": 16955,
+  "image": "/Images/image8.jpg",
+  "category": "nike",
+  "quantity": 1
+},
+
+{
+  "id": 8,
+  "title": "Leifarne",
+  "price": 545,
+  "image": "/Images/image9.jpg",
+  "category": "Chair",
+  "quantity": 1
+},
+
+{
+  "id": 9,
+  "title": "Nordli",
+  "price": 1095,
+  "image": "/Images/image10.jpg",
+  "category": "Side Table",
+  "quantity": 1
+},
+
+{
+  "id": 10,
+  "title": "Vedbo",
+  "price": 2495,
+  "image": "/Images/image11.jpg",
+  "category": "Lounge Chair",
+  "quantity": 1
+},
+
+{
+  "id": 11,
+  "title": "Bingsta",
+  "price": 1995,
+  "image": "/Images/image12.jpg",
+  "category": "Lounge Chair",
+  "quantity": 1
+}
+]
+}

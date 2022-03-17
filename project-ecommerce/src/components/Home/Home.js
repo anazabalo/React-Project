@@ -7,7 +7,7 @@ const Home = () => {
     <div className={styles.homeContent}>
       <div className={styles.mainImage}>
         <Link to="/products" title="Link to Products" className={styles.imageLink}>
-          <img src={landingImage} alt="Welcome picture redirecting to products" />
+          <img src={landingImage} alt="Armonic decorated living room" />
         </Link>
       </div>
 
