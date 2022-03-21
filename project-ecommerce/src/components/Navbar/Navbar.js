@@ -4,8 +4,7 @@ import { useContext } from 'react';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
-  const value = useContext(CartItemsContext);
-  const [cartItems] = value.cartItems;
+  const { cartItems } = useContext(CartItemsContext);
 
   return (
     <nav className={styles.navBar}>
@@ -27,6 +26,7 @@ const Navbar = () => {
             New Customer
           </Link>
           <Link to="/login" className={styles.loginLink}>
+            {' '}
             Log in
           </Link>
         </div>

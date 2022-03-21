@@ -5,7 +5,7 @@ import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Newcustomer from './components/Newcustomer/Newcustomer';
 import { DataProvider } from './Context/Dataprovider';
-import { CartItemsContext } from './Context/CartItemsProvider';
+import { ItemsProvider } from './Context/CartItemsProvider';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -41,7 +41,7 @@ function App() {
 
   //ROUTING
   return (
-    <CartItemsContext>
+    <ItemsProvider>
       <DataProvider>
         <Router>
           <div className="App">
@@ -67,7 +67,7 @@ function App() {
           </div>
         </Router>
       </DataProvider>
-    </CartItemsContext>
+    </ItemsProvider>
   );
 }
 

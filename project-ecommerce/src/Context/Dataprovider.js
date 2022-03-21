@@ -30,9 +30,8 @@ export const DataProvider = (props) => {
   }, []);
 
   const value = {
-    products: [products],
-    setProducts: [setProducts],
-    loading: [loading, setLoading],
+    products,
+    loading,
   };
   return <DataContext.Provider value={value}>{props.children}</DataContext.Provider>;
 };

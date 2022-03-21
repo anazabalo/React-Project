@@ -4,7 +4,7 @@
   "id": 1,
   "title": "Odger",
   "price": 795,
-  "image": "/Images/image2.jpg",
+  "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2160&q=80",
   "category": "Chair",
   "quantity": 1
 },
@@ -13,15 +13,15 @@
   "id": 2,
   "title": "Nilsolle",
   "price": 499,
-  "image": "/Images/image3.jpg",
-  "category": "Bar Chair",
+  "image": "https://images.unsplash.com/photo-1540809799-5da9372c3f64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80",
+  "category": "Stool Chair",
   "quantity": 1
 },
 {
   "id": 3,
   "title": "Kyrre",
   "price": 129,
-  "image": "/Images/image4.jpg",
+  "image": "https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "category": "Stool Chair",
   "quantity": 1
 },
@@ -30,7 +30,7 @@
   "id": 4,
   "title": "Strandmon",
   "price": 5990,
-  "image": "/Images/image5.jpg",
+  "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "category": "Lounge Chair",
   "quantity": 1
 },
@@ -39,7 +39,7 @@
   "id": 5,
   "title": "Hokksund",
   "price": 699,
-  "image": "/Images/image6.jpg",
+  "image": "https://images.unsplash.com/photo-1616464917528-00525c081b89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80",
   "category": "Side Table",
   "quantity": 1
 },
@@ -48,7 +48,7 @@
   "id": 6,
   "title": "Klubbfors",
   "price": 4495,
-  "image": "/Images/image7.jpg",
+  "image": "https://images.unsplash.com/photo-1540638349517-3abd5afc5847?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "category": "Sofa",
   "quantity": 1
 },
@@ -57,8 +57,8 @@
   "id": 7,
   "title": "Stockholm",
   "price": 16955,
-  "image": "/Images/image8.jpg",
-  "category": "nike",
+  "image": "https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  "category": "Sofa",
   "quantity": 1
 },
 
@@ -66,7 +66,7 @@
   "id": 8,
   "title": "Leifarne",
   "price": 545,
-  "image": "/Images/image9.jpg",
+  "image": "https://images.unsplash.com/photo-1622880355742-af182a61b362?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=728&q=80",
   "category": "Chair",
   "quantity": 1
 },
@@ -75,7 +75,7 @@
   "id": 9,
   "title": "Nordli",
   "price": 1095,
-  "image": "/Images/image10.jpg",
+  "image": "https://images.unsplash.com/photo-1616464916474-81eed8d555ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "category": "Side Table",
   "quantity": 1
 },
@@ -84,7 +84,7 @@
   "id": 10,
   "title": "Vedbo",
   "price": 2495,
-  "image": "/Images/image11.jpg",
+  "image": "https://images.unsplash.com/photo-1586158291800-2665f07bba79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "category": "Lounge Chair",
   "quantity": 1
 },
@@ -93,7 +93,7 @@
   "id": 11,
   "title": "Bingsta",
   "price": 1995,
-  "image": "/Images/image12.jpg",
+  "image": "https://images.unsplash.com/photo-1532372576444-dda954194ad0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
   "category": "Lounge Chair",
   "quantity": 1
 }

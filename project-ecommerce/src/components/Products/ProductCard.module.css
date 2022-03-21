@@ -1,0 +1,33 @@
+.CardButton {
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-color: white;
+}
+.productPreview {
+  max-width: 20%;
+  height: 20%;
+  border: 1px solid red;
+  padding: 0.5rem;
+}
+
+.alignInRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titleFooter {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.priceCategory {
+  font-weight: 400;
+  font-size: 1.1rem;
+}

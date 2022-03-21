@@ -1,36 +1,34 @@
-import { Link } from 'react-router-dom';
-import { DataContext } from '../../Context/Dataprovider';
+import { CartItemsContext } from '../../Context/CartItemsProvider';
 import { useContext } from 'react';
-import './Products.css';
+import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
-  console.log(product);
-
-  const value = useContext(DataContext);
-  const onAddToCart = value.onAddToCart;
+  const { onAddToCart } = useContext(CartItemsContext);
   const { image, title, price, category, id } = product;
 
   return (
-    <div className="productPreview" key={id}>
-      <Link to={`/product/${id}`}>
-        <div className="productImage">
-          <img src={image} alt={title} />
+    <div className={styles.productPreview}>
+      <div className={styles.productImage}>
+        <img src={image} alt={title} />
+      </div>
+
+      <div className={styles.productFooter}>
+        <div className={styles.alignInRow}>
+          <p className={styles.titleFooter}> {title}</p>
+          <p className={styles.priceCategory}> {price} SEK</p>
         </div>
-      </Link>
-
-      <div className="productFooter">
-        <p> {title}</p>
-
-        <p> {category}</p>
-        <p> {price}</p>
+        <p className={styles.priceCategory}> {category}</p>
       </div>
-      <div className="productAddButton">
-        <button onClick={() => onAddToCart(id)}>Add to Cart</button>
-      </div>
-      <div>
-        <Link to={`/product/${id}`} className="vistaButton">
-          Vista
-        </Link>
+
+      <div className={styles.alignInRow}>
+        <div>
+          <button className={styles.CardButton} onClick={() => onAddToCart(product)}>
+            Add to Cart
+          </button>
+        </div>
+        <div className={styles.vistaButton}>
+          <button className={styles.CardButton}>View</button>
+        </div>
       </div>
     </div>
   );
