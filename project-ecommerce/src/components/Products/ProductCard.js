@@ -4,7 +4,7 @@ import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
   const { onAddToCart } = useContext(CartItemsContext);
-  const { image, title, price, category, id } = product;
+  const { image, title, price, category } = product;
 
   return (
     <div className={styles.productPreview}>

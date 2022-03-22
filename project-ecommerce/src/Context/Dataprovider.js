@@ -32,6 +32,7 @@ export const DataProvider = (props) => {
   const value = {
     products,
     loading,
+    error,
   };
   return <DataContext.Provider value={value}>{props.children}</DataContext.Provider>;
 };
