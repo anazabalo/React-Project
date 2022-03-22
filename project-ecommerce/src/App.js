@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   const [user, setUser] = useState({ email: '' });
-  const [error, setError] = useState('');
+  //const [error, setError] = useState('');
 
   //FAKE USER FOR LOGIN TRIAL
   const adminUser = {
@@ -61,7 +61,7 @@ function App() {
                   <Newcustomer />
                 </Route>
                 <Route exact path="/login"></Route>
-                <Login user={user} login={login} error={error} logout={logout} />
+                <Login user={user} login={login} logout={logout} />
               </Switch>
             </div>
           </div>
