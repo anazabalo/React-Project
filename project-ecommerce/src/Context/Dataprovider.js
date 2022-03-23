@@ -13,7 +13,7 @@ export const DataProvider = (props) => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:8000/products');
+        const response = await fetch('https://fakefurniturestore-api.herokuapp.com/products');
         const data = await response.json();
 
         // After fetching data stored it in posts state.

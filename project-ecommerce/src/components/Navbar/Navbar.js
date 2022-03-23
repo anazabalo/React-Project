@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CartItemsContext } from '../../Context/CartItemsProvider';
 import { useContext } from 'react';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
@@ -33,6 +34,7 @@ const Navbar = () => {
 
         <div>
           <Link to="/cart">
+            <AddShoppingCartIcon />
             <span className={styles.itemTotal}>{cartItems.length}</span>
           </Link>
         </div>

@@ -1,5 +1,6 @@
 import { CartItemsContext } from '../../Context/CartItemsProvider';
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
@@ -35,3 +36,10 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+
+ProductCard.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number,
+  onClick: PropTypes.func,
+};

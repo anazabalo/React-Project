@@ -1,19 +1,20 @@
 import { CartItemsContext } from '../../Context/CartItemsProvider';
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Cart.module.css';
 
 const Cart = () => {
   const { removeProduct, reduce, increase, cartItems, total } = useContext(CartItemsContext);
-
-  console.log(cartItems);
 
   return (
     <>
       <div className={styles.cartContainer}>
         <p>My Cart</p>
         <div>
-          {cartItems.lenght === 0 ? (
-            <h2>Cart is empty</h2>
+          {cartItems.length === 0 ? (
+            <>
+              <h2>Cart is empty</h2>
+            </>
           ) : (
             <>
               {cartItems.map((product) => (
@@ -45,3 +46,11 @@ const Cart = () => {
   );
 };
 export default Cart;
+
+Cart.propTypes = {
+  id: PropTypes.number,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number,
+  onClick: PropTypes.func,
+};
