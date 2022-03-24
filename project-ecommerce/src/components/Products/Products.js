@@ -10,6 +10,7 @@ const Products = () => {
       <div>
         <h1>Products</h1>
       </div>
+
       <div className={styles.ProductList}>
         {products.map((products) => (
           <ProductCard key={products.id} product={products} />

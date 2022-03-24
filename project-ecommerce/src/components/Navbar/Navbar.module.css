@@ -1,4 +1,5 @@
 .navBar {
+  margin: 0 10vh;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -17,12 +18,41 @@ a {
   display: flex;
   flex-direction: row;
   margin-left: auto;
+  align-items: center;
   font-size: 0.85rem;
+  font-weight: 500;
+  /*border: 1px solid red;*/
+}
+.rightMenuLinks {
+  color: #565656;
 }
 
 .navlinks {
+  margin-left: 5vh;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.4rem;
   text-transform: none;
+  /*border: 1px solid red;*/
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart span {
+  position: absolute;
+  top: -0.7rem;
+  right: -0.001rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.5;
+  font-weight: 800;
+  border-radius: 50%;
+  background-color: crimson;
 }

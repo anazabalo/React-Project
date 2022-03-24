@@ -1,14 +1,17 @@
 h1 {
+  margin: 0 21vh;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8rem;
   padding: 1.5rem;
+  text-transform: uppercase;
+}
+.allProducts {
+  margin-top: 8vh;
 }
 .ProductList {
-  padding: 1.5rem;
-  border: 1px solid red;
-  align-items: flex-start;
+  margin: 0 2vh;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }

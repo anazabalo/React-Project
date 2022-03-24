@@ -3,13 +3,16 @@ import { CartItemsContext } from '../../Context/CartItemsProvider';
 import { useContext } from 'react';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import styles from './Navbar.module.css';
+import CabinIcon from '@mui/icons-material/Cabin';
 
 const Navbar = () => {
   const { cartItems } = useContext(CartItemsContext);
 
   return (
     <nav className={styles.navBar}>
-      <p>React Project</p>
+      <div>
+        <CabinIcon />
+      </div>
       <div>
         <Link to="/" className={styles.navlinks}>
           {' '}
@@ -23,16 +26,16 @@ const Navbar = () => {
 
       <div className={styles.rightMenu}>
         <div>
-          <Link to="/newcustomer" className={styles.signUplink}>
+          <Link to="/newcustomer" className={styles.rightMenuLinks}>
             New Customer
           </Link>
-          <Link to="/login" className={styles.loginLink}>
+          <Link to="/login" className={styles.rightMenuLinks}>
             {' '}
             Log in
           </Link>
         </div>
 
-        <div>
+        <div className={styles.cart}>
           <Link to="/cart">
             <AddShoppingCartIcon />
             <span className={styles.itemTotal}>{cartItems.length}</span>

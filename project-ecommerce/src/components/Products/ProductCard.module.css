@@ -1,19 +1,29 @@
+.productPreview {
+  width: 23%;
+  height: 56vh;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0px 1px 3px 1px #e2e2e2;
+  border-radius: 5px;
+}
+.CardFooterContainer {
+  margin: 2vh 0 1vh 0;
+  padding: 0 9vh 0 9vh;
+}
+
 .CardButton {
-  padding: 0.5rem 0.8rem;
+  padding: 0.6rem 0.9rem;
+  margin-top: 1rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   cursor: pointer;
   display: block;
   width: 100%;
+  border: 1px solid #797878;
+  border-radius: 2px;
   background-color: transparent;
-  border-color: white;
-}
-.productPreview {
-  max-width: 20%;
-  height: 20%;
-  border: 1px solid red;
-  padding: 0.5rem;
+  color: #797878;
 }
 
 .alignInRow {
@@ -25,9 +35,19 @@
 .titleFooter {
   font-size: 1.5rem;
   font-weight: 600;
+  text-transform: uppercase;
+  color: #525050;
 }
 
 .priceCategory {
+  margin-top: 0.5vh;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: #706e6e;
+}
+
+img {
+  height: 40vh;
+  display: block;
+  margin: 0 auto;
 }
