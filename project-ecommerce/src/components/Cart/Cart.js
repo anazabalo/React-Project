@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import styles from './Cart.module.css';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
-import { style } from '@mui/system';
 const Cart = () => {
   const { removeProduct, reduce, increase, cartItems, total } = useContext(CartItemsContext);
 
