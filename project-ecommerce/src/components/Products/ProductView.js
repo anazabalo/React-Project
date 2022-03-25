@@ -5,14 +5,14 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import styles from './ProductView.module.css';
-//import ProductCard from './ProductCard';
+import ProductCard from './ProductCard';
 
 const ProductView = () => {
   const { products } = useContext(DataContext);
   const { onAddToCart } = useContext(CartItemsContext);
   const [details, setDetails] = useState([]);
   const params = useParams();
-  //let item = 0;
+  let item = 0;
 
   console.log(products);
   console.log(params.id);
@@ -56,22 +56,24 @@ const ProductView = () => {
           </div>
         </div>
       }
+      <div className={styles.productsRelatedContainer}>
+        <h3>Products Related</h3>
+        <div className={styles.productsRelated}>
+          {products.map((product) => {
+            if (item < 6 && details.category === product.category) {
+              item++;
+              return <ProductCard key={product.id} product={product} />;
+            } else {
+              <div>
+                <h3> There are no products related</h3>
+              </div>;
+            }
+            return <div></div>;
+          })}
+        </div>
+      </div>
     </>
   );
 };
 
 export default ProductView;
-
-/*   <h3 className={styles.Related}>Products Related</h3>
-      <div className={styles.Products}>
-        {products.map((product) => {
-          if (item < 6 && details.category === product.category) {
-            item++;
-            return <ProductCard key={product.id} product={products} />;
-          } else {
-            <div>
-              <h3> There are no products related</h3>
-            </div>;
-          }
-        })}
-      </div> */
