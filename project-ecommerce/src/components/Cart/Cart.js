@@ -56,7 +56,9 @@ const Cart = () => {
               ))}
               <div className={styles.cartTotal}>
                 <h3>Total price {total} SEK</h3>
-                <button className={styles.payment}>Go to Payment</button>
+                <button className={styles.payment}>
+                  <Link to="/payment">Go to Payment </Link>
+                </button>
               </div>
             </>
           )}

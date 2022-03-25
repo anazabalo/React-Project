@@ -4,7 +4,7 @@ import BtnSlider from './BtnSlider';
 import dataSlider from './DataSlider';
 import { Link } from 'react-router-dom';
 
-export default function Slider() {
+const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(1);
 
   const nextSlide = () => {
@@ -54,4 +54,6 @@ export default function Slider() {
       </div>
     </div>
   );
-}
+};
+
+export default Slider;

@@ -1,0 +1,67 @@
+.paymentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buyerInformation {
+  box-shadow: 0px 1px 3px 1px #e2e2e2;
+  margin-top: 15vh;
+  padding: 6vh;
+}
+
+.personalInformation form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: normal;
+}
+
+.checkoutContainer {
+  box-shadow: 0px 1px 3px 1px #e2e2e2;
+  margin-top: 15vh;
+  padding: 6vh;
+}
+.checkoutContainer button {
+  padding: 0.6rem 0.9rem;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  box-shadow: 0px 1px 3px 1px #e2e2e2;
+  border: 1px solid #797878;
+  border-radius: 2px;
+  background-color: transparent;
+}
+.CardDetails form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: normal;
+}
+
+.BackToProducts p {
+  color: #706e6e;
+  margin-top: 2vh;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #797878;
+}
+
+input {
+  width: 45vh;
+  height: 4vh;
+  margin: 0.4vh 0;
+}

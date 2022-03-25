@@ -3,7 +3,7 @@ import './Slider.css';
 import leftArrow from './icons/left-arrow.svg';
 import rightArrow from './icons/right-arrow.svg';
 
-export default function BtnSlider({ direction, moveSlide }) {
+const BtnSlider = ({ direction, moveSlide }) => {
   console.log(direction, moveSlide);
   return (
     <button
@@ -13,4 +13,6 @@ export default function BtnSlider({ direction, moveSlide }) {
       <img alt="arrow images" src={direction === 'next' ? rightArrow : leftArrow} />
     </button>
   );
-}
+};
+
+export default BtnSlider;

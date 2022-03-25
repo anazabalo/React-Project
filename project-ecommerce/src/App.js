@@ -5,6 +5,7 @@ import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Newcustomer from './components/Newcustomer/Newcustomer';
 import ProductView from './components/Products/ProductView';
+import CartPayment from './components/Cart/CartPayment';
 import { DataProvider } from './Context/Dataprovider';
 import { ItemsProvider } from './Context/CartItemsProvider';
 import { useState } from 'react';
@@ -13,7 +14,6 @@ import './App.css';
 
 function App() {
   const [user, setUser] = useState({ email: '' });
-  //const [error, setError] = useState('');
 
   //FAKE USER FOR LOGIN TRIAL
   const adminUser = {
@@ -63,6 +63,9 @@ function App() {
                 </Route>
                 <Route exact path="/newcustomer">
                   <Newcustomer />
+                </Route>
+                <Route exact path="/payment">
+                  <CartPayment />
                 </Route>
                 <Route exact path="/login">
                   <Login user={user} login={login} logout={logout} />
