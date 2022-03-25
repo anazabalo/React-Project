@@ -1,16 +1,19 @@
 import { CartItemsContext } from '../../Context/CartItemsProvider';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './ProductCard.module.css';
 
 const ProductCard = ({ product }) => {
   const { onAddToCart } = useContext(CartItemsContext);
-  const { image, title, price, category } = product;
+  const { image, title, price, category, id } = product;
 
   return (
     <div className={styles.productPreview}>
       <div className={styles.productImage}>
-        <img src={image} alt={title} />
+        <Link to={`/products/${id}`}>
+          <img src={image} alt={title} />
+        </Link>
       </div>
       <div className={styles.CardFooterContainer}>
         <div className={styles.productFooter}>
@@ -28,7 +31,9 @@ const ProductCard = ({ product }) => {
             </button>
           </div>
           <div className={styles.vistaButton}>
-            <button className={styles.CardButton}>View</button>
+            <button className={styles.CardButton}>
+              <Link to={`/products/${id}`}>View</Link>
+            </button>
           </div>
         </div>
       </div>

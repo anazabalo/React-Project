@@ -4,6 +4,7 @@ import Products from './components/Products/Products';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Newcustomer from './components/Newcustomer/Newcustomer';
+import ProductView from './components/Products/ProductView';
 import { DataProvider } from './Context/Dataprovider';
 import { ItemsProvider } from './Context/CartItemsProvider';
 import { useState } from 'react';
@@ -54,14 +55,18 @@ function App() {
                 <Route exact path="/products">
                   <Products />
                 </Route>
+                <Route exact path="/products/:id">
+                  <ProductView />
+                </Route>
                 <Route exact path="/cart">
                   <Cart />
                 </Route>
                 <Route exact path="/newcustomer">
                   <Newcustomer />
                 </Route>
-                <Route exact path="/login"></Route>
-                <Login user={user} login={login} logout={logout} />
+                <Route exact path="/login">
+                  <Login user={user} login={login} logout={logout} />
+                </Route>
               </Switch>
             </div>
           </div>
