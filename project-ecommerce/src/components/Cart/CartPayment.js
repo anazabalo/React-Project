@@ -1,6 +1,9 @@
 import styles from './CartPayment.module.css';
 import { Link } from 'react-router-dom';
 const CartPayment = () => {
+  const success = () => {
+    alert('Thank you for your purchase');
+  };
   return (
     <div className={styles.paymentContainer}>
       <div className={styles.buyerInformation}>
@@ -42,7 +45,7 @@ const CartPayment = () => {
           </form>
         </div>
 
-        <button>Buy Now</button>
+        <button onClick={success}>Buy Now</button>
         <div className={styles.BackToProducts}>
           <Link to="/products">
             <p>Back to products</p>

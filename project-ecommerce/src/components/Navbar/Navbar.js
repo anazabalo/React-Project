@@ -25,16 +25,6 @@ const Navbar = () => {
       </div>
 
       <div className={styles.rightMenu}>
-        <div>
-          <Link to="/newcustomer" className={styles.rightMenuLinks}>
-            New Customer
-          </Link>
-          <Link to="/login" className={styles.rightMenuLinks}>
-            {' '}
-            Log in
-          </Link>
-        </div>
-
         <div className={styles.cart}>
           <Link to="/cart">
             <AddShoppingCartIcon />
