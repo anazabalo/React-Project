@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 h1 {
   margin-top: 6vh;
   font-size: 2rem;
@@ -144,4 +148,13 @@ h2 {
   border: 1px solid #797878;
   border-radius: 2px;
   background-color: transparent;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }

@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .navBar {
   margin: 0 10vh;
   align-items: center;
@@ -32,7 +37,6 @@ a {
   font-weight: 700;
   line-height: 1.4rem;
   text-transform: none;
-  /*border: 1px solid red;*/
 }
 
 .cart {
@@ -54,4 +58,14 @@ a {
   font-weight: 800;
   border-radius: 50%;
   background-color: crimson;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
