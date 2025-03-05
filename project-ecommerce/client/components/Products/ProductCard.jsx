@@ -9,12 +9,14 @@ const ProductCard = ({ product }) => {
   const { image, title, price, category, id } = product;
 
   return (
-    <div className={styles.productPreview}>
-      <div className={styles.productImage}>
+    <div className={styles.productPreviewContainer}>
+      
+      <div className={styles.cardImageContainer}>
         <Link to={`/products/${id}`}>
           <img src={image} alt={title} />
         </Link>
       </div>
+
       <div className={styles.CardFooterContainer}>
         <div className={styles.productFooter}>
           <div className={styles.alignInRow}>

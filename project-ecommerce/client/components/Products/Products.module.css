@@ -1,23 +1,29 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-h1 {
-  margin: 0 21vh;
+h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8rem;
-  padding: 1.5rem;
   text-transform: uppercase;
 }
+
 .allProducts {
-  margin-top: 8vh;
-}
-.ProductList {
-  margin: 0 2vh;
+  margin: 24px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.ProductList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
